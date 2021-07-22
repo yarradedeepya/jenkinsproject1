@@ -2,4 +2,4 @@
 FROM python:3.8
 COPY requriments.txt requriments.txt
 RUN pip3 install -r requriments.txt
-CMD [ "python"]
+CMD [ "tinker.py"]
