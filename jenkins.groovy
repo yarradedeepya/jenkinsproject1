@@ -9,7 +9,7 @@ pipeline {
             }
         stage('Test'){
             steps{
-                sh "python tinker.py
+                sh "python tinker.py"
 		echo "sucess"
             
             }
