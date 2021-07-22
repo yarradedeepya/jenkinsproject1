@@ -5,6 +5,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/yarradedeepya/jenkinsproject1.git'
+		echo "sucess"
                 }
             }
         stage('Test'){
