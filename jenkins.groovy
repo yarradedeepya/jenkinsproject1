@@ -10,6 +10,7 @@ pipeline {
             }
         stage('Test'){
             steps{
+		echo %WORKSPACE%
 		echo "in Test"
                 sh "tinker.py"
 		echo "sucess"
