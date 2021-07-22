@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/yarradedeepya/Hello-World.git'
+                git 'https://github.com/yarradedeepya/jenkinsproject1.git'
                 }
             }
         stage('Test'){
