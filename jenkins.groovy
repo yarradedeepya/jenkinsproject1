@@ -11,7 +11,9 @@ pipeline {
         stage('Test'){
             steps{
 		echo "in Test"
-                sh "pwd"
+		def workspace=${WORKSPACE}
+		echo $workspace
+                sh "python $workspace/tinker.py"
 		echo "sucess"
             
             }
