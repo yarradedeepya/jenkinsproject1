@@ -11,7 +11,7 @@ pipeline {
         stage('Test'){
             steps{
 		echo "in Test"
-                sh "Python tinker.py"
+                sh "pwd"
 		echo "sucess"
             
             }
