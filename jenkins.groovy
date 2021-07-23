@@ -11,7 +11,7 @@ pipeline {
         stage('Test'){
             steps{
 		echo "in Test"
-                sh "python C:\Users\com\.jenkins\workspace\project1\tinker.py"
+                bat "python C:\Users\com\.jenkins\workspace\project1\tinker.py"
 		echo "sucess"
             
             }
