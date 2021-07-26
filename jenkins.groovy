@@ -10,9 +10,11 @@ pipeline {
             }
 	stage('Reading-File'){
 	    steps{
+		script{
 		def props = readJSON file:'emp.JSON'
 		assert props['firstName'] == 'John'
 		echo props['lastName']
+		}
 	}
 	}
         stage('Test'){
